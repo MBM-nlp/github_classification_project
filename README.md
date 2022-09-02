@@ -5,6 +5,12 @@
 Kalpana Cohort @Codeup
 
 020800SEPTEMBER2022
+# Initial Questions
+### 1. What are the most common words in READMEs?
+### 2. Does the length of the README vary by programming language?
+### 3. Do different programming languages use a different number of unique words?
+### 4. Are there any words that uniquely identify a programming language?
+
 # Process
 ## Planning
 Sep 2 Friday
@@ -38,7 +44,6 @@ Sep 8 Thursday 10AM
 ## Data Preparation
 
 ## Data Exploration
-### 1. What are the most common words in READMEs?
-### 2. Does the length of the README vary by programming language?
-### 3. Do different programming languages use a different number of unique words?
-### 4. Are there any words that uniquely identify a programming language?
+
+## Modeling
+
