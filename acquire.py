@@ -108,6 +108,7 @@ def scrape_github_data() -> List[Dict[str, str]]:
     """
     return [process_repo(repo) for repo in REPOS]
 
+
 def get_repo_list(query='metaverse', sort_method='stars', how_many = 50):
     """Return a list of repositories based on search query and sorted by sort method"""
     
