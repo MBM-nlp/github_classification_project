@@ -41,19 +41,31 @@ def basic_clean(string):
     string = string.lower()
 
     # Handle curly quotes
-    charmap = {0x201c: u'"',
-                0x201d: u'"',
-                0x2018: u"'",
-                0x2019: u"'"}
+    # charmap = {0x201c: u'"',
+    #             0x201d: u'"',
+    #             0x2018: u"'",
+    #             0x2019: u"'"}
 
-    string = string.translate(charmap)
+    # string = string.translate(charmap)
 
     # normalizing the text
     string = unicodedata.normalize('NFKD', string).encode('ascii', 'ignore').decode('utf-8', 'ignore')
 
     # return only alphanumeric values in text: everything else, convert to whitespace
-    string = re.sub("[^a-z0-9\s']", '', string)
+    string = re.sub("[^a-z0-9\s']", ' ', string)
+
+    # cleans multi-line strings in the data
+    string = re.sub(r"[\r|\n|\r\n]+", ' ', string)
+
+    # removing any word/ele <= 2 letters
+    string = re.sub(r'\b[a-z]{,2}\b', '', string)
     
+    # removing multiple spaces
+    string = re.sub(r'\s+', ' ', string)
+
+    # removing beginning and end whitespaces
+    string = string.strip()
+
     # return the string text
     return string
 
@@ -101,6 +113,16 @@ def lemmatize(string):
 
 def remove_stopwords(string, exclude_words = None, include_words = None):
     
+    # including potential redundant words in scrape
+    include_words = [
+                    "metaverse", 
+                    "Metaverse", 
+                    "meta-verse", 
+                    "Meta-verse", 
+                    "meta verse", 
+                    "Meta Verse", 
+                    "Meta verse"]
+
     # creating the list of english stop words
     stopword_list = stopwords.words('english')
     
@@ -128,9 +150,18 @@ def remove_stopwords(string, exclude_words = None, include_words = None):
     # return the string text back: excluding stop words
     return filtered_string
 
+'''Function to clean the original data objects/df'''
+def clean_data_objects(df):
+    df = df[[
+        "repo", \
+        "language", \
+        "readme_contents"]].astype(str)
 
-'''Function takes in a series/array/or list of text and returns a
-clean list of individual words.'''
+    print(f'df shape: {df.shape}')
+
+    return df
+
+'''Function to mass dataclean the original README repo files'''
 def mass_text_clean(text, include_words=None, exclude_words=None):
 
     text = basic_clean(text)
@@ -139,4 +170,4 @@ def mass_text_clean(text, include_words=None, exclude_words=None):
 
     text = remove_stopwords(text, include_words = include_words, exclude_words = exclude_words)
 
-    return list(text.split(' '))
+    return text
