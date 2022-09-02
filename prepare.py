@@ -3,21 +3,8 @@ import os
 import pandas as pd
 import numpy as np
 
-# visualization imports
-import matplotlib.pyplot as plt
-import seaborn as sns
-
-# importing request module
-from requests import get    
-
-# Beautiful Soup import
-from bs4 import BeautifulSoup
-
 # regular expression import
 import re
-
-# json modulea
-import json
 
 # uni-code library
 import unicodedata
@@ -40,14 +27,6 @@ def basic_clean(string):
     # lowercase the text
     string = string.lower()
 
-    # Handle curly quotes
-    # charmap = {0x201c: u'"',
-    #             0x201d: u'"',
-    #             0x2018: u"'",
-    #             0x2019: u"'"}
-
-    # string = string.translate(charmap)
-
     # normalizing the text
     string = unicodedata.normalize('NFKD', string).encode('ascii', 'ignore').decode('utf-8', 'ignore')
 
@@ -69,7 +48,8 @@ def basic_clean(string):
     # return the string text
     return string
 
-# creating a function to tokenize the string text
+
+'''Function that tokenizes the string text'''
 def tokenize(string):
     
     # creating the tokenize object
@@ -79,8 +59,7 @@ def tokenize(string):
     return tokenizer.tokenize(string, return_str = True)
 
 
-# creating the function to accept some text and apply stemming process
-# using 'PorterStemmer' method
+'''Function that uses the "PorterStem" method on the text data'''
 def porter_stem(string):
 
     # creating the object
@@ -94,7 +73,8 @@ def porter_stem(string):
 
     return stemmed_string
 
-# create the function to lemmatize text
+
+'''Function to lemmatize text'''
 def lemmatize(string):
     
     # creating the lemmatizer object
@@ -109,16 +89,14 @@ def lemmatize(string):
     # return the tranformed string text
     return lemmatized_string
 
-# creating the function to remove stopwords from a string of text
 
+'''Function that removes stop words in text'''
 def remove_stopwords(string, exclude_words = None, include_words = None):
     
     # including potential redundant words in scrape
     include_words = [
                     "metaverse", 
                     "Metaverse", 
-                    "meta-verse", 
-                    "Meta-verse", 
                     "meta verse", 
                     "Meta Verse", 
                     "Meta verse"]
@@ -150,8 +128,10 @@ def remove_stopwords(string, exclude_words = None, include_words = None):
     # return the string text back: excluding stop words
     return filtered_string
 
-'''Function to clean the original data objects/df'''
+
+'''Function to clean the original df data types'''
 def clean_data_objects(df):
+
     df = df[[
         "repo", \
         "language", \
@@ -160,6 +140,7 @@ def clean_data_objects(df):
     print(f'df shape: {df.shape}')
 
     return df
+
 
 '''Function to mass dataclean the original README repo files'''
 def mass_text_clean(text, include_words=None, exclude_words=None):
