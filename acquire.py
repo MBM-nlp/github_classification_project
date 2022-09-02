@@ -36,14 +36,22 @@ if headers["Authorization"] == "token " or headers["User-Agent"] == "":
     )
 
 
-def github_api_request(url: str) -> Union[List, Dict]:
+def github_api_request(urls):
+    
+    for url in urls:
+
     response = requests.get(url, headers=headers)
+
     response_data = response.json()
-    if response.status_code != 200:
-        raise Exception(
-            f"Error response from github api! status code: {response.status_code}, "
-            f"response: {json.dumps(response_data)}"
-        )
+
+        if response.status_code != 200:
+            print(f'empty repo: {urls.index(url)}')
+            continue
+
+
+            # raise Exception(
+            #     f"Error response from github api! status code: {response.status_code}, "
+            #     f"response: {json.dumps(response_data)}")
     return response_data
 
 
