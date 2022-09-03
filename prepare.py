@@ -99,7 +99,8 @@ def remove_stopwords(string, exclude_words = None, include_words = None):
                     "Metaverse", 
                     "meta verse", 
                     "Meta Verse", 
-                    "Meta verse"]
+                    "Meta verse",
+                    'see', 'http', 'com','github','org', 'source', 'example', 'code', 'use', '1', "'", ';', '&#9']
 
     # creating the list of english stop words
     stopword_list = stopwords.words('english')
