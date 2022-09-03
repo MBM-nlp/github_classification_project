@@ -15,7 +15,7 @@ Kalpana Cohort @Codeup
 ## Planning
 Sep 2 Friday
 - [x] Acquire - Brad
-- [ ] Prepare - Mijail
+- [x] Prepare - Mijail
 
 Sep 3-4 Sat-Sun
 - [ ] Explore - ALL
