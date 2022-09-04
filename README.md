@@ -1,3 +1,4 @@
+![2](https://user-images.githubusercontent.com/105242871/188337100-259ba806-eb38-4bd1-8cc4-68a16a5f6383.jpeg)
 # **Metaverse Classification**
 
     Created By: Meredith Wang, Bradley Gauvin, & Mijail Mariano
@@ -5,6 +6,7 @@
 Kalpana Cohort @Codeup
 
 020800SEPTEMBER2022
+
 # Initial Questions
 ### 1. What are the most common words in READMEs?
 ### 2. Does the length of the README vary by programming language?
@@ -18,10 +20,10 @@ Sep 2 Friday
 - [x] Prepare - Mijail
 
 Sep 3-4 Sat-Sun
-- [ ] Explore - ALL
+- [x] Explore - ALL
 
 Sep 5 Monday
-- [ ] Explore Done
+- [x] Explore Done
 
 Sep 6 Tuesday noon
 - [ ] Modeling Done - Meredith
@@ -40,8 +42,10 @@ Sep 8 Thursday 10AM
 - [ ] README DONE - Meredith & Mijail
 
 ## Data Acquisition
+[acquire](acquire.py)
 
 ## Data Preparation
+[prepare](prepare.py)
 
 ## Data Exploration
 
