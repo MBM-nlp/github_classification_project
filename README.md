@@ -1,4 +1,3 @@
-![2](https://user-images.githubusercontent.com/105242871/188337100-259ba806-eb38-4bd1-8cc4-68a16a5f6383.jpeg)
 # **Metaverse Classification**
 
     Created By: Meredith Wang, Bradley Gauvin, & Mijail Mariano
@@ -6,6 +5,8 @@
 Kalpana Cohort @Codeup
 
 020800SEPTEMBER2022
+
+![virtual_reality](https://user-images.githubusercontent.com/105242871/188337225-67fd4808-4264-430c-9f1d-34f09df2a27b.jpg)
 
 # Initial Questions
 ### 1. What are the most common words in READMEs?
