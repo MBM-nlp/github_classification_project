@@ -51,4 +51,8 @@ Sep 8 Thursday 10AM
 ## Data Exploration
 
 ## Modeling
-
+- Decision Tree
+- SVM (Support vector machine) classifier
+- KNN (k-nearest neighbors) classifier 
+- Naive Bayes classifier
+- XGBoost
