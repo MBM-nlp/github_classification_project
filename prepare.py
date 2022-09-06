@@ -16,6 +16,8 @@ from nltk.stem import PorterStemmer, LancasterStemmer, WordNetLemmatizer
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import stopwords
 
+# sklearn library/modules
+from sklearn.model_selection import train_test_split
 
 '''TEXT CLEANING FUNCTIONS'''
 # creating a function titled, 'basic_clean'
@@ -153,3 +155,58 @@ def mass_text_clean(text, include_words=None, exclude_words=None):
     text = remove_stopwords(text, include_words = include_words, exclude_words = exclude_words)
 
     return text
+
+
+''' Dataset has multiple languages. Some languages are iterations of other languages.
+This function is to replace some of the languages names so the are in the same category'''
+def update_languages(df):
+
+    # Jupyter notebook as Python
+    df = df.replace('Jupyter Notebook', 'Python')
+
+    # C Related Languages
+    df = df.replace(('Objective-C++','Objective-C','C','C++','C#','SuperCollider','GLSL'),'C')
+
+    # Java Related Languages ans sublanguages
+    df = df.replace(('JavaScript', 'Vue','Clojure','Kotlin','EJS'), 'Java')
+
+    # TypeScript Languages
+    df = df.replace('Svelte','TypeScript')
+
+    # Microsoft languages for windows applications
+    df = df.replace(('PowerShell','Batchfile','Shell'),'Microsoft')
+
+    # iOS related languages
+    df = df.replace(('Metal','Swift'),'iOS')
+
+    # languages with < 10 usage
+    df = df.replace(('Microsoft','ShaderLab','SCSS','PHP','iOS','GDScript','Roff','HCL','TeX', 'Cadence','R','LSL','ASP.NET'),'other')
+    
+    return df
+
+
+'''
+    This function takes in a dataframe, the name of the target variable
+    (for stratification purposes), and an integer for a setting a seed
+    and splits the data into train, validate and test. 
+    Test is 20% of the original dataset, validate is .30*.80= 24% of the 
+    original dataset, and train is .70*.80= 56% of the original dataset. 
+    The function returns, in this order, train, validate and test dataframes. 
+    '''
+def train_validate_test_split(df, target, seed = 123):
+
+    train_validate, test = train_test_split(df, test_size=0.2, 
+                                            random_state=seed, 
+                                            stratify=df[target])
+
+    train, validate = train_test_split(train_validate, test_size=0.3, 
+                                       random_state=seed,
+                                       stratify=train_validate[target])
+
+
+    # printing the shapes of the datasets
+    print(f'train shape: {train.shape}')
+    print(f'validate shape: {validate.shape}')
+    print(f'test shape: {test.shape}')
+
+    return train, validate, test
