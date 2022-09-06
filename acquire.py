@@ -40,18 +40,18 @@ def github_api_request(urls):
     
     for url in urls:
 
-    response = requests.get(url, headers=headers)
+        response = requests.get(url, headers=headers)
 
-    response_data = response.json()
+        response_data = response.json()
 
         if response.status_code != 200:
             print(f'empty repo: {urls.index(url)}')
             continue
 
-
             # raise Exception(
             #     f"Error response from github api! status code: {response.status_code}, "
             #     f"response: {json.dumps(response_data)}")
+    
     return response_data
 
 
