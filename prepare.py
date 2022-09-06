@@ -181,7 +181,9 @@ def update_languages(df):
 
     # languages with < 10 usage
     df = df.replace(('Microsoft','ShaderLab','SCSS','PHP','iOS','GDScript','Roff','HCL','TeX', 'Cadence','R','LSL','ASP.NET'),'other')
-    
+
+    # NaNs
+    df=df.replace('nan', 'text')
     return df
 
 
