@@ -26,7 +26,9 @@ In this analysis we study "Metaverse" related text data and use natural language
 
 #### **Project Description**
 
-This analysis uses README.md data found on GitHub repositories to understand the common text patterns in metaverse related topics and analysis. We use computational linguistic-based rules to examine and learn from unique text data found in these repositories. From learned patterns, we build a multiclass machine learning classification model capable of predicting future metaverse repository coding languages.
+This analysis uses README.md data found on GitHub repositories to understand the common text patterns in metaverse related topics and analysis. 
+
+We use computational linguistic-based rules to examine and learn from unique text data found in these repositories. From learned patterns, we build a multiclass machine learning classification model capable of predicting future metaverse repository coding languages.
 
 *The predicted programming language used in this analysis is the primary language in overall repository percentage in the GitHub repository.* *
 
