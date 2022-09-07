@@ -40,7 +40,7 @@ We use computational linguistic-based rules to examine and learn from unique tex
 
 In modeling we test and deploy several unique non-linear models and chose to deploy an XGBoost model on the final out-of-sample README text data. The XGBoost model returns an overall predictive accuracy score of ~46%. 
 
-- On average, these results provide us with the potential to accurately predict and study the contents of a "Metaverse" related repo and its primary programming language by ~56% better a baseline prediction.
+- On average, these results provide us with the potential to accurately predict and study the contents of a "Metaverse" related repo and its primary programming language by ~56% better than a baseline prediction.
 
 
 *The predicted programming language used in this analysis is the primary language in overall repository percentage in the GitHub repository.* *
