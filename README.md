@@ -1,4 +1,3 @@
-
 # <span style ="color: indigo">The Metaverse: NLP Multi-Classification Modeling</span>
 
 ![virtual_reality](https://user-images.githubusercontent.com/105242871/188337225-67fd4808-4264-430c-9f1d-34f09df2a27b.jpg)
@@ -8,11 +7,12 @@
 
 <center>
 
-| Meredith Wang | Brad Gauvin | Mijail Mariano |
+| <center>Meredith Wang</center> | <center>Brad Gauvin</center> | <center>Mijail Mariano</center> |
 | ----          | ----        | ----           |
-| [github.com/m3redithw](https://github.com/m3redithw) | [github.com/bradgauvin](https://github.com/bradgauvin) | [github.com/mijailmariano](https://github.com/mijailmariano) |
+| <center>[github.com/m3redithw](https://github.com/m3redithw)</center> | <center>[github.com/bradgauvin](https://github.com/bradgauvin)</center> | <center>[github.com/mijailmariano](https://github.com/mijailmariano)</center> |
 
 </center>
+
 
 September 2022
 
@@ -23,11 +23,13 @@ September 2022
 
 ### **Project Goal**
 
-In this analysis we study "Metaverse" related text data and use natural language processing techniques to predict programmatic languages* of future GitHub Metaverse repositories.
-
 (placeholder) Why the metaverse?
 
-#### **Project Description**
+In this analysis we study "Metaverse" related text data and use natural language processing techniques to predict programmatic languages* of future GitHub Metaverse repositories.
+
+(placeholder) tldr: model results
+
+### **Project Description**
 
 This analysis uses README.md data found on GitHub repositories to understand the common text patterns in metaverse related topics and analysis. 
 
