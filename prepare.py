@@ -20,10 +20,9 @@ from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split
 
 '''TEXT CLEANING FUNCTIONS'''
-# creating a function titled, 'basic_clean'
-# lowercase everything
-# normalize unicode characters
-# replace non-alphanumeric characters with whitespace
+# lowercases all letters
+# normalizes unicode characters
+# replaces non-alphanumeric characters with whitespace
 def basic_clean(string):
 
     # lowercase the text
