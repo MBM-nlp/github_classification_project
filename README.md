@@ -6,10 +6,13 @@
 
 **Created By:**
 
+<center>
+
 | Meredith Wang | Brad Gauvin | Mijail Mariano |
 | ----          | ----        | ----           |
 | [github.com/m3redithw](https://github.com/m3redithw) | [github.com/bradgauvin](https://github.com/bradgauvin) | [github.com/mijailmariano](https://github.com/mijailmariano) |
 
+</center>
 
 September 2022
 
