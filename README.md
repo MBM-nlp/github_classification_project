@@ -20,22 +20,57 @@ September 2022
 
 
 ----
+### **Project Description**
+
+Like many business buzzwords, "The Metaverse" is no different and is a term many businesses are rapidly working to understand and define before it arrives. Traditionally the term has been closely associated to virtual realities much like a video game where individuals can enter and interact with simulated environments and other players. 
+
+Recent studies by McKensey Co. and Wharton School of Business estimate the Metaverse economy to be roughly a $5-13 trillion dollar market by the year 2030. With businesses investing ~$120 billion in the first five months of 2022, and a total of ~$50 billion in 2021 - the Metaverse is appearing more like a virtual utopia where businesses are seeking to go. 
+
+Potentially more important than the idea of entering a virtual reality is the potential access to information that a Metaverse environment can help create. Imagine a doctor being able to enter the Metaverse from anywhere in the world and advising or leading highly specialized medical procedures in communities with unequal access to health care. With the changing landscape of working environments, the Metaverse can offer a future for both employer and employee to work from anywhere and still create the special interactions once only possible in the physical space.
+
+As interesting and alluring as a Metaverse future appears to be, we believe there is still much to understand about this topic and the language people use to describe the Metaverse or better yet, the code that helps create it.
+
+
 
 ### **Project Goal**
 
-(placeholder) Why the metaverse?
+This analysis uses GitHub README.md data commonly found in cloudbased repositories to understand the common text patterns in Metaverse related topics and analysis. 
 
-In this analysis we study "Metaverse" related text data and use natural language processing techniques to predict programmatic languages* of future GitHub Metaverse repositories.
+We use computational linguistic-based rules to examine and learn from unique text data found in these repositories. From learned patterns, we build a multiclass machine learning classification model capable of predicting future Metaverse repository coding languages.
 
-(placeholder) tldr: model results
+In modeling we test and deploy several unique non-linear models and chose to deploy an XGBoost model on the final out-of-sample README text data. The XGBoost model returns an overall predictive accuracy score of ~46%. 
 
-### **Project Description**
+- On average, these results provide us with the potential to accurately predict and study the contents of a "Metaverse" related repo and its primary programming language by ~56% better a baseline prediction.
 
-This analysis uses README.md data found on GitHub repositories to understand the common text patterns in metaverse related topics and analysis. 
-
-We use computational linguistic-based rules to examine and learn from unique text data found in these repositories. From learned patterns, we build a multiclass machine learning classification model capable of predicting future metaverse repository coding languages.
 
 *The predicted programming language used in this analysis is the primary language in overall repository percentage in the GitHub repository.* *
+
+----
+
+### **Process: In Brief**
+
+1. We search and acquire the GitHub README text data of "Metaverse" associated repositories.
+2. We perform the following data cleaning processes on the full dataset: filter most non-alphanumeric characters, lemmatize the text, remove stop words and words < 3 letters.
+3. We classify & label repositories that contain README text but no primary programming languages as "text".
+4. We bucket/group affiliated and low-frequency programming languages to higher-domain languages.
+5. We split the larger text dataset into train, validate, and test subset dataset for exploration and modeling.
+6. We set exploratory questions and conduct analysis on programmatic text conducting frequency counts, outlier analysis, word clouds, and visual graphs.
+7. We identify unique single, paired, and grouped words associated to programming languages.
+8. We set a baseline language prediction score and prep the train and validate datasets for modeling.
+9. We identify, and train five unique classes of non-linear models.
+10. We deploy models on train and validate datasets and measure comparative scores. 
+11. We determine the best performing model on out-of-sample data and deploy this model on the test dataset.
+12. Finally, we analyze our findings and provide recommendations for future analysis and actionable steps.
+
+----
+
+#### **Steps to Reproduce**
+
+1.  Note that unique to this analysis are several functions which will require a GitHub profile and API token to connect to GitHub’s API address and extract similar repository data. The script and instructions for creating a GitHub token can be found in the “acquire.py” file. 
+2.  However, if wanting to reproduce this exact analysis, you will first need to download/import the necessary environment(s) for recreating the analysis. 
+3.  There are several libraries and modules such as Pandas, Matplotlib, Seaborn, NumPy, SKLearn, and “XGBoost” that are used to conduct this analysis. This environment can be referenced under “notebook dependencies” in the final jupyter notebook.
+4.  Once the proper environment has been importer, you can then read-in the “metaverse.csv” file using Pandas “read_csv” method as shown in the final jupyter notebook and run the report.
+
 
 ----
 
@@ -71,34 +106,25 @@ We use computational linguistic-based rules to examine and learn from unique tex
 
 ----
 
-### **Steps to Reproduce**
-
-1.  Note that unique to this analysis are several functions which will require a GitHub profile and API token to connect to GitHub’s API address and extract similar repository data. The script and instructions for creating a GitHub token can be found in the “acquire.py” file. 
-2.  However, if wanting to reproduce this exact analysis, you will first need to download/import the necessary environment(s) for recreating the analysis. 
-3.  There are several libraries and modules such as Pandas, Matplotlib, Seaborn, NumPy, SKLearn, and “XGBoost” that are used to conduct this analysis. This environment can be referenced under “notebook dependencies” in the final jupyter notebook.
-4.  Once the proper environment has been importer, you can then read-in the “metaverse.csv” file using Pandas “read_csv” method as shown in the final jupyter notebook and run the report.
-
-----
-
 ### **Exploratory Questions**
 
 #### **1. What are the most common words in READMEs?**
 
-Across all metaverse related repos and programming languages, we learned that key words such as "href", "detail", "summary", "open", and "project" were prominent words used when describing metaverse repositories. This inferred to us that the "metaverse" topic may still be developing. 
+Across all Metaverse related repos and programming languages, we learned that key words such as "href", "detail", "summary", "open", and "project" were prominent words used when describing Metaverse repositories. This inferred to us that the "Metaverse" topic may still be developing. 
 
-By identifying words such as "href" and "open" the metaverse topic may be leveraging insights from other references or even repositories to better understand the "metaverse" topic. 
+By identifying words such as "href" and "open" individuals or entities may be leveraging insights from other references or even repositories to better understand the "Metaverse" topic. 
 
-Words like "detail" and "summary" can highlight a "zooming-in" or "zooming-out" approach to defining both the practical and theoretical application of the metaverse or associated topics. 
+Words like "detail" and "summary" can highlight a "zooming-in" or "zooming-out" approach to defining both the practical and theoretical application of the Metaverse or associated topics. 
 
 #### **2. Does the length of the README vary by programming language?**
 
 We found that the average length of Metaverse repositories differed by programming languages. On average, programming languages such as Rust, TypeScript, C, and regular text tended to contain more words in their README.md files.
 
-On average, programming languages such as HTML, CSS, and Google's "Go" languages contained the least number of texts. 
+On average, programming languages such as HTML, CSS, and Google's "Go" languages contained the least number of texts.
 
 The relatively high use of programs such as "Rust" and "C" indicates the potential need for adaptable programming to create and store ideas.
 
-The frequent use of common text may infer the use of exploring, recording, or summarizing ideas about metaverse related findings. 
+The frequent use of common text may infer the use of exploring, recording, or summarizing ideas about Metaverse related findings.
 
 #### **3. Do different programming languages use a different number of unique words?**
 
@@ -184,9 +210,45 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 -----
 
+### **Modeling**
+
+**<u>Models Tested</u>**
+
+* Decision Tree
+* SVM (Support vector machine) classifier
+* KNN (k-nearest neighbors) classifier 
+* Naive Bayes classifier
+* XGBoost
+
+#### **<u>Model Results</u>**
 
 
-# Process
+<br>
+
+|Model              |Train    |Validate   |
+|----               |----     |----       |
+|                   |         |           |
+|                   |         |           |
+|baseline mean      |     |       |
+
+
+
+<u>**``XGBoost Performance Through Test Dataset``**</u>
+
+| XGBoost       | Accuracy     |Relative % Difference  |
+|----           |----          |----                   |
+| Baseline      |              |                       |
+| Train         |              |                       |
+| Validate      |              |                       |
+| Test (final)  |              |                       |
+
+----
+
+
+
+
+
+
 ## Planning
 Sep 2 Friday
 * [x] Acquire * Brad
@@ -222,9 +284,4 @@ Sep 8 Thursday 10AM
 
 ## Data Exploration
 
-## Modeling
-* Decision Tree
-* SVM (Support vector machine) classifier
-* KNN (k-nearest neighbors) classifier 
-* Naive Bayes classifier
-* XGBoost
+
