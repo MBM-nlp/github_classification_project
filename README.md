@@ -21,14 +21,14 @@ September 2022
 ----
 ### **Table of Contents**
 
-#### [Project Description](https://github.com/MBM-nlp/github_classification_project/blob/d14e62ddfb21831db25bc7472c9d5388c8145b98/README.md?plain=1#L34-L46)
-#### Project Goal
-#### Process
-#### Steps to Reproduce
-#### Data Dictionary
-#### Exploratory Questions
-#### Modeling
-#### Recommendations & Next Steps
+* [Project Description](#project-description)
+* [Project Goal](#project-goal)
+* [Process](#process-in-brief)
+* [Steps to Reproduce](#steps-to-reproduce)
+* [Data Dictionary](#data-dictionary)
+* [Exploratory Questions](#exploratory-questions)
+* [Modeling](#modeling)
+* [Recommendations & Next Steps](#recommendations-&-next-steps)
 
 ----
 ### **Project Description**
@@ -258,7 +258,7 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 <br>
 
-**<u>Models Tested</u>**
+**<u>Algorithms Tested</u>**
 
 * Decision Tree
 * SVM (Support vector machine) classifier
@@ -266,15 +266,18 @@ Yes, across the 11 programming classification languages studied we found the fol
 * Naive Bayes classifier
 * XGBoost
 
-#### **<u>Model Results</u>**
+#### **<u>Top 5 Model Results</u>**
 
 <br>
 
-|Model              |Train    |Validate   |
+| **Model** | **Train** | **Validate** |
 |----               |----     |----       |
-|                   |         |           |
-|                   |         |           |
-|baseline mean      |     |       |
+| XGBoost, TF-IDF (1,3) | 71% | 49% |
+| XGBoost, Bag of Words (1, 2) | 73% | 47% |
+|SVM, TF-IDF(1, 3)| 53.6% | 45.4% |
+| Extra Tree, TF-IDF(1, 3)| 71% | 47% |
+| XGBoost TF-IDF(1, 4)| 71% | 49% |
+| Baseline |  31.7%   |   31.7%  |
 
 
 
@@ -282,16 +285,18 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 | XGBoost       | Accuracy     |Relative % Difference  |
 |----           |----          |----                   |
-| Baseline      |              |                       |
-| Train         |              |                       |
-| Validate      |              |                       |
-| Test (final)  |              |                       |
+| Baseline      |  31.5%            |   -                    |
+| Train         |  71%            |      123%                 |
+| Validate      |  49%            |      55%                 |
+| Test (final)  |  49%            |      56%                 |
 
 ----
 
 ### **Recommendations & Next Steps**
 
-(placeholder)
+* Experiment different ways of categorizing programming languages
+* Expand the amount of data acquired in Metaverse
+* 
 
 
 ----
