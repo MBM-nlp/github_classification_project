@@ -24,7 +24,7 @@ September 2022
 
 <br>
 
-Like many business buzzwords, "The Metaverse" is no different and is a term many businesses are rapidly working to understand and define before it arrives. Traditionally the term has been closely associated to virtual realities much like a video game where individuals can enter and interact with simulated environments and other players. 
+Like many business buzzwords, "The Metaverse" is no different and is a term many businesses are rapidly working to understand and define before it arrives.  The "Metaverse" term has traditionally been closely associated to virtual realities much like a video game where individuals can enter and interact with simulated environments and other players. 
 
 Recent studies by McKensey Co. and Wharton School of Business estimate the Metaverse economy to be a roughly $5-13 trillion dollar market by the year 2030. With businesses investing ~$120 billion in the first five months of 2022, and a total of ~$50 billion in 2021 -- The Metaverse is appearing more like a virtual utopia where possibility is only limited by imagination. 
 
@@ -151,11 +151,11 @@ Words like "detail" and "summary" can highlight a "zooming-in" or "zooming-out" 
 
 #### **2. Does the length of the README vary by programming language?**
 
-We found that the average length of Metaverse repositories differed by programming languages. On average, programming languages such as Rust, TypeScript, C, and regular text tended to contain more words in their README.md files.
+We found that the average length of Metaverse repositories differed by programming languages. On average, programming languages such as Rust, Python, TypeScript, C, and regular text tended to contain more words in their README.md files.
 
 On average, programming languages such as HTML, CSS, and Google's "Go" languages contained the least number of texts.
 
-The relatively high use of programs such as "Rust" and "C" indicates the potential need for adaptable programming to create and store ideas.
+The relatively high text volume from repos coding in "Rust" and "C" languages indicates the potential need for adaptable programming to create and store ideas.
 
 The frequent use of common text may infer the use of exploring, recording, or summarizing ideas about Metaverse related findings.
 
@@ -167,13 +167,13 @@ True programming languages such as Java, Rust, and Python - to include text writ
 
 Since Java is considered a "high-class" programming language, this may be consistent with the high number of unique characters or text found in their respective README.md.
 
-Consistent with previous findings, languages such as C, Rust, Python, TypeScript, and Text represents to us the relatively high-frequency use and thus, unique words found through these languages.
+Consistent with previous findings, languages such as C, Rust, Python, TypeScript, and Text represents to us the relatively high-frequency use and thus, unique words found in repos that code in these languages.
 
 We also found that words such as "project" and "app" consistently appeared across most languages.
 
 #### **4. Are there any words that uniquely identify a programming language?**
 
-Yes, across the 11 programming classification languages studied we found the following three (3) words/text that unique identifies the individual language. 
+Yes, across the 11 programming classification languages studied we found the following three (3) words/text that uniquely identifies the individual language. 
 
 **C**
 
@@ -263,7 +263,7 @@ Yes, across the 11 programming classification languages studied we found the fol
 |----               |----     |----       |
 |                   |         |           |
 |                   |         |           |
-|baseline mean      |     |       |
+|baseline mode      |         |           |
 
 
 
@@ -280,38 +280,7 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 ### **Recommendations & Next Steps**
 
-(placeholder)
-
-
-----
-
-## Planning
-Sep 2 Friday
-* [x] Acquire * Brad
-* [x] Prepare * Mijail
-
-Sep 3-4 Sat-Sun
-* [x] Explore * ALL
-
-Sep 5 Monday
-* [x] Explore Done
-
-Sep 6 Tuesday noon
-* [x] Modeling Done - Meredith
-
-Sep 6 Tuesday night
-* [x] Final report - Brad
-* [x] MVP done
-
-Sep 7 Wednesday by noon
-* [x] Presentation
-
-Sep 7 Wednesday night
-* [x] DONE
-
-Sep 8 Thursday 10AM
-* [] README DONE - Meredith & Mijail
-
-
+Repositories
+(languages)
 
 
