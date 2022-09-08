@@ -26,11 +26,11 @@ September 2022
 
 Like many business buzzwords, "The Metaverse" is no different and is a term many businesses are rapidly working to understand and define before it arrives. Traditionally the term has been closely associated to virtual realities much like a video game where individuals can enter and interact with simulated environments and other players. 
 
-Recent studies by McKensey Co. and Wharton School of Business estimate the Metaverse economy to be a roughly $5-13 trillion dollar market by the year 2030. With businesses investing ~$120 billion in the first five months of 2022, and a total of ~$50 billion in 2021 - the Metaverse is appearing more like a virtual utopia where businesses are seeking to go. 
+Recent studies by McKensey Co. and Wharton School of Business estimate the Metaverse economy to be a roughly $5-13 trillion dollar market by the year 2030. With businesses investing ~$120 billion in the first five months of 2022, and a total of ~$50 billion in 2021 -- The Metaverse is appearing more like a virtual utopia where possibility is only limited by imagination. 
 
 Potentially more important than the idea of entering a virtual reality is the potential access to information that a Metaverse environment can help create. Imagine a doctor being able to enter the Metaverse from anywhere in the world and advising or leading highly specialized medical procedures in communities with unequal access to health care. With the changing landscape of working environments, the Metaverse can offer a future for both employer and employee to work from anywhere and still create the special interactions once only possible in the physical space.
 
-As interesting and alluring as a Metaverse future appears to be, we believe there is still much to understand about this topic and the language people use to describe the Metaverse or better yet, the code that helps create it.
+As interesting and alluring as a Metaverse future appears to be, we believe there is still much to understand about this topic and the language people use to describe the Metaverse or better yet, the programming language and code that will create it.
 
 <br>
 
