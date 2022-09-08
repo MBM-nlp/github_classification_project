@@ -278,9 +278,9 @@ Yes, across the 11 programming classification languages studied we found the fol
 |----       |----       |----          |
 | XGBoost, TF-IDF (1,3) | 71% | 49% |
 | XGBoost, Bag of Words (1, 2) | 73% | 47% |
-|SVM, TF-IDF(1, 3)| 53.6% | 45.4% |
-| Extra Tree, TF-IDF(1, 3)| 71% | 47% |
-| XGBoost TF-IDF(1, 4)| 71% | 49% |
+|SVM, TF-IDF (1, 3)| 53.6% | 45.4% |
+| Extra Tree, TF-IDF (1, 3)| 71% | 47% |
+| XGBoost TF-IDF (1, 4)| 71% | 49% |
 | Baseline |  31.7%   |   31.7%  |
 
 
