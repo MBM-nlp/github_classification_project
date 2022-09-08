@@ -21,7 +21,7 @@ September 2022
 ----
 ### **Table of Contents**
 
-#### Project Description
+#### [Project Description](https://github.com/MBM-nlp/github_classification_project/blob/d14e62ddfb21831db25bc7472c9d5388c8145b98/README.md?plain=1#L34-L46)
 #### Project Goal
 #### Process
 #### Steps to Reproduce
