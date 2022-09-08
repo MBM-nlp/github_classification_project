@@ -28,7 +28,7 @@ September 2022
 * [Data Dictionary](#data-dictionary)
 * [Exploratory Questions](#exploratory-questions)
 * [Modeling](#modeling)
-* [Recommendations & Next Steps](#recommendations-&-next-steps)
+* [Recommendations & Next Steps](#recommendations--next-steps)
 
 ----
 ### **Project Description**
@@ -296,7 +296,8 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 * Experiment different ways of categorizing programming languages
 * Expand the amount of data acquired in Metaverse
-* 
+* Extract more repositories from GitHub over time
+* Exploring more programming languages instead of encoding them into smaller groups
 
 
 ----
