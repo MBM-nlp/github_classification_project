@@ -27,6 +27,8 @@ September 2022
 * [Steps to Reproduce](#steps-to-reproduce)
 * [Data Dictionary](#data-dictionary)
 * [Exploratory Questions](#exploratory-questions)
+  * 1. [What are the most common words in READMEs?](#1-what-are-the-most-common-words-in-readmes)
+  * 2. 
 * [Modeling](#modeling)
 * [Recommendations & Next Steps](#recommendations--next-steps)
 
