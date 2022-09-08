@@ -18,6 +18,17 @@ September 2022
 
 *Codeup, Kalpana Cohort*
 
+----
+### **Table of Contents**
+
+#### Project Description
+#### Project Goal
+#### Process
+#### Steps to Reproduce
+#### Data Dictionary
+#### Exploratory Questions
+#### Modeling
+#### Recommendations & Next Steps
 
 ----
 ### **Project Description**
