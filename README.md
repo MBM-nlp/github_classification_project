@@ -274,7 +274,7 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 <br>
 
-| **Model** | **Train** | **Validate** |
+| Model     | Train     | Validate     |
 |----       |----       |----          |
 | XGBoost, TF-IDF (1,3) | 71% | 49% |
 | XGBoost, Bag of Words (1, 2) | 73% | 47% |
