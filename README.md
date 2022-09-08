@@ -27,8 +27,10 @@ September 2022
 * [Steps to Reproduce](#steps-to-reproduce)
 * [Data Dictionary](#data-dictionary)
 * [Exploratory Questions](#exploratory-questions)
-  * 1. [What are the most common words in READMEs?](#1-what-are-the-most-common-words-in-readmes)
-  * 2. 
+  * [What are the most common words in READMEs?](#1-what-are-the-most-common-words-in-readmes)
+  * [Does the length of README vary by programming language?](#2-does-the-length-of-the-readme-vary-by-programming-language)
+  * [Do different programming languages use a different number of unique words?](#3-do-different-programming-languages-use-a-different-number-of-unique-words)
+  * [Are there any words that uniquely identify a programming language?](4-are-there-any-words-that-uniquely-identify-a-programming-language)
 * [Modeling](#modeling)
 * [Recommendations & Next Steps](#recommendations--next-steps)
 
