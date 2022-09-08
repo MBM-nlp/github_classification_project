@@ -18,13 +18,28 @@ September 2022
 
 *Codeup, Kalpana Cohort*
 
+----
+### **Table of Contents**
+
+* [Project Description](#project-description)
+* [Project Goal](#project-goal)
+* [Process](#process-in-brief)
+* [Steps to Reproduce](#steps-to-reproduce)
+* [Data Dictionary](#data-dictionary)
+* [Exploratory Questions](#exploratory-questions)
+  * [What are the most common words in READMEs?](#1-what-are-the-most-common-words-in-readmes)
+  * [Does the length of README vary by programming language?](#2-does-the-length-of-the-readme-vary-by-programming-language)
+  * [Do different programming languages use a different number of unique words?](#3-do-different-programming-languages-use-a-different-number-of-unique-words)
+  * [Are there any words that uniquely identify a programming language?](4-are-there-any-words-that-uniquely-identify-a-programming-language)
+* [Modeling](#modeling)
+* [Recommendations & Next Steps](#recommendations--next-steps)
 
 ----
 ### **Project Description**
 
 <br>
 
-Like many business buzzwords, "The Metaverse" is no different and is a term many businesses are rapidly working to understand and define before it arrives.  The "Metaverse" term has traditionally been closely associated to virtual realities much like a video game where individuals can enter and interact with simulated environments and other players. 
+Like many business buzzwords, "The Metaverse" is no different and is a term many businesses are rapidly working to understand and define before it arrives. The "Metaverse" term has traditionally been closely associated to virtual realities much like a video game where individuals can enter and interact with simulated environments and other players. 
 
 Recent studies by McKensey Co. and Wharton School of Business estimate the Metaverse economy to be a roughly $5-13 trillion dollar market by the year 2030. With businesses investing ~$120 billion in the first five months of 2022, and a total of ~$50 billion in 2021 -- The Metaverse is appearing more like a virtual utopia where possibility is only limited by imagination. 
 
@@ -247,7 +262,7 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 <br>
 
-**<u>Models Tested</u>**
+**<u>Algorithms Tested</u>**
 
 * Decision Tree
 * SVM (Support vector machine) classifier
@@ -255,15 +270,18 @@ Yes, across the 11 programming classification languages studied we found the fol
 * Naive Bayes classifier
 * XGBoost
 
-#### **<u>Model Results</u>**
+#### **<u>Top 5 Model Results</u>**
 
 <br>
 
-|Model              |Train    |Validate   |
-|----               |----     |----       |
-|                   |         |           |
-|                   |         |           |
-|baseline mode      |         |           |
+| **Model** | **Train** | **Validate** |
+|----       |----       |----          |
+| XGBoost, TF-IDF (1,3) | 71% | 49% |
+| XGBoost, Bag of Words (1, 2) | 73% | 47% |
+|SVM, TF-IDF(1, 3)| 53.6% | 45.4% |
+| Extra Tree, TF-IDF(1, 3)| 71% | 47% |
+| XGBoost TF-IDF(1, 4)| 71% | 49% |
+| Baseline |  31.7%   |   31.7%  |
 
 
 
@@ -271,16 +289,17 @@ Yes, across the 11 programming classification languages studied we found the fol
 
 | XGBoost       | Accuracy     |Relative % Difference  |
 |----           |----          |----                   |
-| Baseline      |              |                       |
-| Train         |              |                       |
-| Validate      |              |                       |
-| Test (final)  |              |                       |
+| Baseline      | 31.5%        | -                     |
+| Train         | 71%          | 123%                  |
+| Validate      | 49%          | 55%                   |
+| Test (final)  | 49%          | 56%                   |
 
 ----
 
 ### **Recommendations & Next Steps**
 
-Repositories
-(languages)
-
-
+* Extract more GitHub "Metaverse" repositories over time
+* Expand the amount of data acquired from Metaverse related repositories
+* Experiment different ways of categorizing programming languages
+* Rather than encoding lower frequency program languages to higher associated languages -- explore these program languages and evaluate against model predictions
+* Research and study additional "Metaverse" related topics or programs being built through "Rust", "Python", "TypeScript", and "C" which on average contained the highest README.md word counts
