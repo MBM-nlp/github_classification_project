@@ -33,7 +33,7 @@ September 2022
   * [Are there any words that uniquely identify a programming language?](4-are-there-any-words-that-uniquely-identify-a-programming-language)
 * [Modeling](#modeling)
 * [Recommendations & Next Steps](#recommendations--next-steps)
-
+* [Project Delivery](https://www.canva.com/design/DAFLfrYbwyA/8DMEYjMXzZQ65GgmgiGtrQ/view?utm_content=DAFLfrYbwyA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 ----
 ### **Project Description**
 
@@ -303,3 +303,8 @@ Yes, across the 11 programming classification languages studied we found the fol
 * Experiment different ways of categorizing programming languages
 * Rather than encoding lower frequency program languages to higher associated languages -- explore these program languages and evaluate against model predictions
 * Research and study additional "Metaverse" related topics or programs being built through "Rust", "Python", "TypeScript", and "C" which on average contained the highest README.md word counts
+
+----
+
+### **Project Delivery**
+[Presentation](https://www.canva.com/design/DAFLfrYbwyA/8DMEYjMXzZQ65GgmgiGtrQ/view?utm_content=DAFLfrYbwyA&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
