@@ -19,11 +19,12 @@ from nltk.corpus import stopwords
 # sklearn library/modules
 from sklearn.model_selection import train_test_split
 
-'''TEXT CLEANING FUNCTIONS'''
+
 # lowercases all letters
 # normalizes unicode characters
 # replaces non-alphanumeric characters with whitespace
 def basic_clean(string):
+    '''Key text cleaning functions'''
 
     # lowercase the text
     string = string.lower()
@@ -50,9 +51,9 @@ def basic_clean(string):
     return string
 
 
-'''Function that tokenizes the string text'''
 def tokenize(string):
-    
+    '''Function that tokenizes the string text'''
+
     # creating the tokenize object
     tokenizer = ToktokTokenizer()
     
@@ -60,8 +61,9 @@ def tokenize(string):
     return tokenizer.tokenize(string, return_str = True)
 
 
-'''Function that uses the "PorterStem" method on the text data'''
+
 def porter_stem(string):
+    '''Function that uses the "PorterStem" method on the text data'''
 
     # creating the object
     ps = PorterStemmer()
@@ -75,9 +77,10 @@ def porter_stem(string):
     return stemmed_string
 
 
-'''Function to lemmatize text'''
+
 def lemmatize(string):
-    
+    '''Function to lemmatize text'''
+
     # creating the lemmatizer object
     wnl = WordNetLemmatizer()
     
@@ -91,9 +94,10 @@ def lemmatize(string):
     return lemmatized_string
 
 
-'''Function that removes stop words in text'''
+
 def remove_stopwords(string, exclude_words = None, include_words = None):
-    
+    '''Function that removes stop words in text'''
+
     # including potential redundant words in scrape
     include_words = [
                     "metaverse", 
@@ -131,8 +135,8 @@ def remove_stopwords(string, exclude_words = None, include_words = None):
     return filtered_string
 
 
-'''Function to clean the original df data types'''
 def clean_data_objects(df):
+    '''Function to clean the original df data types'''
 
     df = df[[
         "repo", \
@@ -144,8 +148,8 @@ def clean_data_objects(df):
     return df
 
 
-'''Function to mass dataclean the original README repo files'''
 def mass_text_clean(text, include_words=None, exclude_words=None):
+    '''Function to mass dataclean the original README repo files'''
 
     text = basic_clean(text)
 
@@ -156,9 +160,9 @@ def mass_text_clean(text, include_words=None, exclude_words=None):
     return text
 
 
-''' Dataset has multiple languages. Some languages are iterations of other languages.
-This function is to replace some of the languages names so the are in the same category'''
 def update_languages(df):
+    ''' Dataset has multiple languages. Some languages are iterations of other languages.
+    This function is to replace some of the languages names so the are in the same category'''
 
     # Jupyter notebook as Python
     df = df.replace('Jupyter Notebook', 'Python')
@@ -186,7 +190,9 @@ def update_languages(df):
     return df
 
 
-'''
+
+def train_validate_test_split(df, target, seed = 123):
+    '''
     This function takes in a dataframe, the name of the target variable
     (for stratification purposes), and an integer for a setting a seed
     and splits the data into train, validate and test. 
@@ -194,7 +200,6 @@ def update_languages(df):
     original dataset, and train is .70*.80= 56% of the original dataset. 
     The function returns, in this order, train, validate and test dataframes. 
     '''
-def train_validate_test_split(df, target, seed = 123):
 
     train_validate, test = train_test_split(df, test_size=0.2, 
                                             random_state=seed, 
